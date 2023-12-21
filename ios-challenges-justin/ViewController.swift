@@ -32,8 +32,21 @@ public class TreeNode {
 }
 
 class Solution {
-    func isSameTree(_ p: TreeNode?, _ q: TreeNode?) -> Bool {
-        return false
+    func invertTree_20231221_Justin(_ root: TreeNode?) -> TreeNode? {
+        guard let root = root else { return nil }
+        
+        let temp = root.right
+        root.right = invertTree(root.left)
+        root.left = invertTree(temp)
+
+        return root
     }
+
+    func invertTree(_ root: TreeNode?) -> TreeNode? {
+        guard let root = root else { return nil }
+        (root.left, root.right) = (invertTree(root.right), invertTree(root.left))
+        return root
+    }
+
 }
 
