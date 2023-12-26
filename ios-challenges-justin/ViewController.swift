@@ -11,7 +11,18 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+
+        let t1 = TreeNode(1)
+        t1.right = TreeNode(2)
+        t1.right?.right = TreeNode(3)
+
+        let t2 = TreeNode(2)
+        t2.right = TreeNode(3)
+
+        let s = Solution()
+        let result = s.isSubtree(t1, t2)
+
+        print(result)
     }
 
 
@@ -32,8 +43,14 @@ public class TreeNode {
 }
 
 class Solution {
-    func levelOrder(_ root: TreeNode?) -> [[Int]] {
-        return []
+    func isSubtree(_ root: TreeNode?, _ subRoot: TreeNode?) -> Bool {
+        if root == nil && subRoot != nil { return false }
+        return isSameTree(root, subRoot) || isSubtree(root?.right, subRoot) || isSubtree(root?.left, subRoot)
+    }
+
+    func isSameTree(_ p: TreeNode?, _ q: TreeNode?) -> Bool {
+        if p == nil && q == nil { return true }
+        if p?.val != q?.val || p == nil || q == nil { return false }
+        return isSameTree(p?.left, q?.left) && isSameTree(p?.right, q?.right)
     }
 }
-
