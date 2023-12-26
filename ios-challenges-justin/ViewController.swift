@@ -44,13 +44,6 @@ public class TreeNode {
 
 class Solution {
     func isSubtree(_ root: TreeNode?, _ subRoot: TreeNode?) -> Bool {
-        if root == nil && subRoot != nil { return false }
-        return isSameTree(root, subRoot) || isSubtree(root?.right, subRoot) || isSubtree(root?.left, subRoot)
-    }
-
-    func isSameTree(_ p: TreeNode?, _ q: TreeNode?) -> Bool {
-        if p == nil && q == nil { return true }
-        if p?.val != q?.val || p == nil || q == nil { return false }
-        return isSameTree(p?.left, q?.left) && isSameTree(p?.right, q?.right)
+        return false
     }
 }
