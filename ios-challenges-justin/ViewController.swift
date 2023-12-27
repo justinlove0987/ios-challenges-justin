@@ -11,9 +11,35 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        
+        let myObject = MyClass(value: "New value")
     }
 
 
 }
+
+class MyClass {
+    var myProperty: String {
+        willSet {
+            print("Will set myProperty to \(newValue)")
+        }
+        didSet {
+            print("Did set myProperty to \(myProperty), previously \(oldValue)")
+        }
+    }
+    
+    init(value: String) {
+        myProperty = value
+        setupPropertyValue(value: value)
+    }
+
+    init() {
+        myProperty = "Initial value"
+    }
+    
+    private func setupPropertyValue(value: String) {
+        myProperty = value
+    }
+}
+
 
