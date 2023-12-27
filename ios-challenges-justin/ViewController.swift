@@ -12,7 +12,9 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let myObject = MyClass(value: "New value")
+        let myObject = MyClass()
+        myObject.myProperty = "New value"
+
     }
 
 
@@ -27,19 +29,11 @@ class MyClass {
             print("Did set myProperty to \(myProperty), previously \(oldValue)")
         }
     }
-    
-    init(value: String) {
-        myProperty = value
-        setupPropertyValue(value: value)
-    }
 
     init() {
         myProperty = "Initial value"
     }
-    
-    private func setupPropertyValue(value: String) {
-        myProperty = value
-    }
 }
+
 
 
