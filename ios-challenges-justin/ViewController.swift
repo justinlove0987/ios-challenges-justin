@@ -17,19 +17,9 @@ class ViewController: UIViewController {
 
 }
 
-protocol SettingsProvider {
-    func openSettings() -> Void
-}
-
-extension AppDelegate: SettingsProvider {
-    func openSettings() -> Void {
-        
-    }
-}
-
 class FooViewModel {
-    init(SettingsProvider: SettingsProvider) {
-
+    init(openSettings: @escaping () -> Void) {
+        
     }
 }
 
