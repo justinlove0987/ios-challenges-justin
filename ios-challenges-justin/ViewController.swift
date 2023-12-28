@@ -17,7 +17,16 @@ class ViewController: UIViewController {
 
 }
 
-extension Optional where Wrapped == String {
+/*
+ Solution1
+extension Optional<String> {
+    var orEmpty: String {
+        self ?? ""
+    }
+}
+ */
+
+extension String? {
     var orEmpty: String {
         self ?? ""
     }
