@@ -16,25 +16,16 @@ class ViewController: UIViewController {
 
 }
 
-/*
-struct UserModel {
-    var id: String? // optional because anonymous user has no id
-    var firstName: String
-    var lastName: String
-    var isAdmin: Bool
-}
-*/
-
-protocol AnonymousUser {
-
-}
-
-protocol User: AnonymousUser {
+protocol User {
     var id: String { get }
     var firstName: String { get }
     var lastName: String { get }
 }
 
-protocol AdminUser: User { }
+enum UserGrant {
+    case anonynmous
+    case regular(User)
+    case admin(User)
+}
 
 
