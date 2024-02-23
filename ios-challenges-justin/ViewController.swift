@@ -11,7 +11,10 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+
+        let customView = CustomView()
+        view.addSubview(customView)
+        customView.frame = view.bounds
     }
 
 
