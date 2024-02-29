@@ -7,18 +7,26 @@
 
 import UIKit
 
+/*
+ ___ _ _                          _
+ | __(_) |__  __ _ _ _  ___  __ __(_)
+ | _|| | '_ \/ _` | ' \/ _ \/ _/ _| |
+ |_| |_|_.__/\__,_|_||_\___/\__\__|_|
+
+ */
+
 class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-        #if DEVELOPMENT
-        print("1")
-        #else
-        print("0")
-        #endif
+        
+        print("===== \(fib(22))") // 70 max
     }
-
+    
+    func fib(_ n: Int) -> Int {
+        return 0
+    }
 
 }
 
