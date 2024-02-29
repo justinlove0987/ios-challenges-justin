@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2AF5D4E22B90060C00AF2CCF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0552EE32B2BEDAF005CC265 /* ViewController.swift */; };
+		2AF5D4E32B90060C00AF2CCF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0552EDF2B2BEDAF005CC265 /* AppDelegate.swift */; };
+		2AF5D4E42B90060C00AF2CCF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0552EE12B2BEDAF005CC265 /* SceneDelegate.swift */; };
+		2AF5D4E72B90060C00AF2CCF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D0552EEA2B2BEDB2005CC265 /* LaunchScreen.storyboard */; };
+		2AF5D4E82B90060C00AF2CCF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D0552EE82B2BEDB2005CC265 /* Assets.xcassets */; };
+		2AF5D4E92B90060C00AF2CCF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D0552EE52B2BEDAF005CC265 /* Main.storyboard */; };
 		D0552EE02B2BEDAF005CC265 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0552EDF2B2BEDAF005CC265 /* AppDelegate.swift */; };
 		D0552EE22B2BEDAF005CC265 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0552EE12B2BEDAF005CC265 /* SceneDelegate.swift */; };
 		D0552EE42B2BEDAF005CC265 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0552EE32B2BEDAF005CC265 /* ViewController.swift */; };
@@ -16,6 +22,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2AF5D4ED2B90060C00AF2CCF /* ios-challenges-justin copy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ios-challenges-justin copy.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2AF5D4EE2B90060C00AF2CCF /* ios-challenges-justin copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "ios-challenges-justin copy-Info.plist"; path = "/Users/justin.tseng/Desktop/developer/iOS/Me/ios-challenges-justin/ios-challenges-justin copy-Info.plist"; sourceTree = "<absolute>"; };
 		D0552EDC2B2BEDAF005CC265 /* ios-challenges-justin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ios-challenges-justin.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D0552EDF2B2BEDAF005CC265 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D0552EE12B2BEDAF005CC265 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -27,6 +35,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		2AF5D4E52B90060C00AF2CCF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		D0552ED92B2BEDAF005CC265 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -42,6 +57,7 @@
 			children = (
 				D0552EDE2B2BEDAF005CC265 /* ios-challenges-justin */,
 				D0552EDD2B2BEDAF005CC265 /* Products */,
+				2AF5D4EE2B90060C00AF2CCF /* ios-challenges-justin copy-Info.plist */,
 			);
 			sourceTree = "<group>";
 		};
@@ -49,6 +65,7 @@
 			isa = PBXGroup;
 			children = (
 				D0552EDC2B2BEDAF005CC265 /* ios-challenges-justin.app */,
+				2AF5D4ED2B90060C00AF2CCF /* ios-challenges-justin copy.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -70,6 +87,23 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		2AF5D4E02B90060C00AF2CCF /* ios-challenges-justin copy */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2AF5D4EA2B90060C00AF2CCF /* Build configuration list for PBXNativeTarget "ios-challenges-justin copy" */;
+			buildPhases = (
+				2AF5D4E12B90060C00AF2CCF /* Sources */,
+				2AF5D4E52B90060C00AF2CCF /* Frameworks */,
+				2AF5D4E62B90060C00AF2CCF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "ios-challenges-justin copy";
+			productName = "ios-challenges-justin";
+			productReference = 2AF5D4ED2B90060C00AF2CCF /* ios-challenges-justin copy.app */;
+			productType = "com.apple.product-type.application";
+		};
 		D0552EDB2B2BEDAF005CC265 /* ios-challenges-justin */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = D0552EF02B2BEDB2005CC265 /* Build configuration list for PBXNativeTarget "ios-challenges-justin" */;
@@ -116,11 +150,22 @@
 			projectRoot = "";
 			targets = (
 				D0552EDB2B2BEDAF005CC265 /* ios-challenges-justin */,
+				2AF5D4E02B90060C00AF2CCF /* ios-challenges-justin copy */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		2AF5D4E62B90060C00AF2CCF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2AF5D4E72B90060C00AF2CCF /* LaunchScreen.storyboard in Resources */,
+				2AF5D4E82B90060C00AF2CCF /* Assets.xcassets in Resources */,
+				2AF5D4E92B90060C00AF2CCF /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		D0552EDA2B2BEDAF005CC265 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -134,6 +179,16 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		2AF5D4E12B90060C00AF2CCF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2AF5D4E22B90060C00AF2CCF /* ViewController.swift in Sources */,
+				2AF5D4E32B90060C00AF2CCF /* AppDelegate.swift in Sources */,
+				2AF5D4E42B90060C00AF2CCF /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		D0552ED82B2BEDAF005CC265 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -166,6 +221,64 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		2AF5D4EB2B90060C00AF2CCF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 5H3B76C82P;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "ios-challenges-justin copy-Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				OTHER_SWIFT_FLAGS = "-DDEVELOPMENT";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.justin.ios-challenges-justin";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		2AF5D4EC2B90060C00AF2CCF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 5H3B76C82P;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "ios-challenges-justin copy-Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				OTHER_SWIFT_FLAGS = "-DDEVELOPMENT";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.justin.ios-challenges-justin";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 		D0552EEE2B2BEDB2005CC265 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -223,6 +336,7 @@
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				OTHER_SWIFT_FLAGS = "";
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -279,6 +393,7 @@
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
+				OTHER_SWIFT_FLAGS = "";
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				VALIDATE_PRODUCT = YES;
@@ -305,6 +420,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
+				OTHER_SWIFT_FLAGS = "";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.justin.ios-challenges-justin";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -333,6 +449,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
+				OTHER_SWIFT_FLAGS = "";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.justin.ios-challenges-justin";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -344,6 +461,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		2AF5D4EA2B90060C00AF2CCF /* Build configuration list for PBXNativeTarget "ios-challenges-justin copy" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2AF5D4EB2B90060C00AF2CCF /* Debug */,
+				2AF5D4EC2B90060C00AF2CCF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		D0552ED72B2BEDAF005CC265 /* Build configuration list for PBXProject "ios-challenges-justin" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
