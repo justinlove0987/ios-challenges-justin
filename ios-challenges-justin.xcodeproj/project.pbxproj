@@ -13,8 +13,6 @@
 		D0552EE72B2BEDAF005CC265 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D0552EE52B2BEDAF005CC265 /* Main.storyboard */; };
 		D0552EE92B2BEDB2005CC265 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D0552EE82B2BEDB2005CC265 /* Assets.xcassets */; };
 		D0552EEC2B2BEDB2005CC265 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D0552EEA2B2BEDB2005CC265 /* LaunchScreen.storyboard */; };
-		D0F2BEBF2B88941B00BA7D8A /* CustomView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D0F2BEBE2B88941B00BA7D8A /* CustomView.xib */; };
-		D0F2BEC12B88943000BA7D8A /* CustomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0F2BEC02B88943000BA7D8A /* CustomView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,8 +24,6 @@
 		D0552EE82B2BEDB2005CC265 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D0552EEB2B2BEDB2005CC265 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D0552EED2B2BEDB2005CC265 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D0F2BEBE2B88941B00BA7D8A /* CustomView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomView.xib; sourceTree = "<group>"; };
-		D0F2BEC02B88943000BA7D8A /* CustomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,8 +63,6 @@
 				D0552EE82B2BEDB2005CC265 /* Assets.xcassets */,
 				D0552EEA2B2BEDB2005CC265 /* LaunchScreen.storyboard */,
 				D0552EED2B2BEDB2005CC265 /* Info.plist */,
-				D0F2BEBE2B88941B00BA7D8A /* CustomView.xib */,
-				D0F2BEC02B88943000BA7D8A /* CustomView.swift */,
 			);
 			path = "ios-challenges-justin";
 			sourceTree = "<group>";
@@ -132,7 +126,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				D0552EEC2B2BEDB2005CC265 /* LaunchScreen.storyboard in Resources */,
-				D0F2BEBF2B88941B00BA7D8A /* CustomView.xib in Resources */,
 				D0552EE92B2BEDB2005CC265 /* Assets.xcassets in Resources */,
 				D0552EE72B2BEDAF005CC265 /* Main.storyboard in Resources */,
 			);
@@ -146,7 +139,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				D0552EE42B2BEDAF005CC265 /* ViewController.swift in Sources */,
-				D0F2BEC12B88943000BA7D8A /* CustomView.swift in Sources */,
 				D0552EE02B2BEDAF005CC265 /* AppDelegate.swift in Sources */,
 				D0552EE22B2BEDAF005CC265 /* SceneDelegate.swift in Sources */,
 			);
