@@ -21,11 +21,30 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         
-        print("===== \(fib(22))") // 70 max
+        print("===== \(fib(50))") // 70 max
     }
     
+    func fibNaive(_ n: Int) -> Int {
+        if n == 0 {
+            return 0
+        } else if n == 1 {
+            return 1
+        } else {
+            return fibNaive(n - 1) + fibNaive(n - 2)
+        }
+    }
+
+    var memo = [Int: Int]()
+
     func fib(_ n: Int) -> Int {
-        return 0
+        if n == 0 { return 0 }
+        else if n == 1 { return 1 }
+
+        if let result = memo[n] { return result }
+
+        memo[n] = fib(n - 1) + fib(n - 2)
+
+        return memo[n]!
     }
 
 }
